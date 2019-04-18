@@ -1,0 +1,6 @@
+{%raw%}
+<li {% if name == 'index' %}class="active"{% end %} ><a href="/index">{{_('menu index')}}</a></li>
+{%endraw%}
+{% for url, name in menu.items() %}
+<li {% raw %}{% if {% endraw %}name == '{{name}}' {% raw %} %}class="active"{% end %}{% endraw %} ><a href="{{url}}">{%raw%}{{_('menu {%endraw%}{{ name }}{%raw%}')}}{%endraw%}</a></li>
+{% endfor %}

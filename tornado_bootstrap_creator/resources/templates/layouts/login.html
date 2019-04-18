@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>{%raw%}{{_('{%endraw%}{{project_name}}{%raw%}')}}{%endraw%}</title>{%raw%}
+        <link rel="shortcut icon" type="image/png" href="{{ static_url('favicon/favicon.png') }}">
+        <link rel="stylesheet" href="{{ static_url('css/bootstrap.min.css', include_version = False) }}" />
+        <link rel="stylesheet" href="{{ static_url('css/bootstrap-theme.min.css', include_version = False) }}" />
+        <link rel="stylesheet" href="{{ static_url('css/slider.css', include_version = False) }}" />
+        <link rel="stylesheet" href="{{ static_url('css/select2.min.css', include_version = False) }}" />
+        <link rel="stylesheet" href="{{ static_url('css/main.css', include_version = False) }}" />
+        <script type="text/javascript" src="{{ static_url('js/jquery.min.js', include_version = False) }}"></script>
+        <script type="text/javascript" src="{{ static_url('js/bootstrap.min.js', include_version = False) }}"></script>
+        <script type="text/javascript" src="{{ static_url('js/bootstrap-slider.js', include_version = False) }}"></script>
+        <script type="text/javascript" src="{{ static_url('js/select2.min.js', include_version = False) }}"></script>
+    <head>
+    <body>
+        {% raw __content__ %}
+    </body>
+</html>
+{%endraw%}
